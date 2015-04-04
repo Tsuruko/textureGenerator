@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FD904621AD07C50000D7B94 /* Bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD904481AD07C50000D7B94 /* Bitmap.cpp */; };
+		5FD904651AD07C50000D7B94 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9044B1AD07C50000D7B94 /* Camera.cpp */; };
+		5FD904661AD07C50000D7B94 /* CellTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9044C1AD07C50000D7B94 /* CellTexture.cpp */; };
+		5FD904671AD07C50000D7B94 /* CloudTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9044D1AD07C50000D7B94 /* CloudTexture.cpp */; };
+		5FD904681AD07C50000D7B94 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9044E1AD07C50000D7B94 /* Color.cpp */; };
+		5FD9046E1AD07C50000D7B94 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD904541AD07C50000D7B94 /* main.cpp */; };
+		5FD9046F1AD07C50000D7B94 /* MarbleTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD904551AD07C50000D7B94 /* MarbleTexture.cpp */; };
+		5FD904731AD07C50000D7B94 /* PerlinNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD904591AD07C50000D7B94 /* PerlinNoise.cpp */; };
+		5FD9047A1AD07C50000D7B94 /* WoodTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD904601AD07C50000D7B94 /* WoodTexture.cpp */; };
+		5FD9047B1AD07C50000D7B94 /* WorleyNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD904611AD07C50000D7B94 /* WorleyNoise.cpp */; };
+		5FD904871AD089C0000D7B94 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD904861AD089C0000D7B94 /* Vector3.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5FD904121AD07AE0000D7B94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5FD904141AD07AE0000D7B94 /* textureGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = textureGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD904231AD07C50000D7B94 /* Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bitmap.h; path = Includes/Bitmap.h; sourceTree = "<group>"; };
+		5FD904261AD07C50000D7B94 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = Includes/Camera.h; sourceTree = "<group>"; };
+		5FD904271AD07C50000D7B94 /* CellTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellTexture.h; path = Includes/CellTexture.h; sourceTree = "<group>"; };
+		5FD904281AD07C50000D7B94 /* CloudTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudTexture.h; path = Includes/CloudTexture.h; sourceTree = "<group>"; };
+		5FD904291AD07C50000D7B94 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Color.h; path = Includes/Color.h; sourceTree = "<group>"; };
+		5FD9042B1AD07C50000D7B94 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Includes/Core.h; sourceTree = "<group>"; };
+		5FD904321AD07C50000D7B94 /* MarbleTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarbleTexture.h; path = Includes/MarbleTexture.h; sourceTree = "<group>"; };
+		5FD904381AD07C50000D7B94 /* PerlinNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PerlinNoise.h; path = Includes/PerlinNoise.h; sourceTree = "<group>"; };
+		5FD9043E1AD07C50000D7B94 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scene.h; path = Includes/Scene.h; sourceTree = "<group>"; };
+		5FD904401AD07C50000D7B94 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = Includes/Texture.h; sourceTree = "<group>"; };
+		5FD904451AD07C50000D7B94 /* WoodTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoodTexture.h; path = Includes/WoodTexture.h; sourceTree = "<group>"; };
+		5FD904461AD07C50000D7B94 /* WorleyNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorleyNoise.h; path = Includes/WorleyNoise.h; sourceTree = "<group>"; };
+		5FD904481AD07C50000D7B94 /* Bitmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bitmap.cpp; path = Source/Bitmap.cpp; sourceTree = "<group>"; };
+		5FD9044B1AD07C50000D7B94 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = Source/Camera.cpp; sourceTree = "<group>"; };
+		5FD9044C1AD07C50000D7B94 /* CellTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CellTexture.cpp; path = Source/CellTexture.cpp; sourceTree = "<group>"; };
+		5FD9044D1AD07C50000D7B94 /* CloudTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CloudTexture.cpp; path = Source/CloudTexture.cpp; sourceTree = "<group>"; };
+		5FD9044E1AD07C50000D7B94 /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Color.cpp; path = Source/Color.cpp; sourceTree = "<group>"; };
+		5FD904541AD07C50000D7B94 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Source/main.cpp; sourceTree = "<group>"; };
+		5FD904551AD07C50000D7B94 /* MarbleTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MarbleTexture.cpp; path = Source/MarbleTexture.cpp; sourceTree = "<group>"; };
+		5FD904591AD07C50000D7B94 /* PerlinNoise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PerlinNoise.cpp; path = Source/PerlinNoise.cpp; sourceTree = "<group>"; };
+		5FD904601AD07C50000D7B94 /* WoodTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WoodTexture.cpp; path = Source/WoodTexture.cpp; sourceTree = "<group>"; };
+		5FD904611AD07C50000D7B94 /* WorleyNoise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WorleyNoise.cpp; path = Source/WorleyNoise.cpp; sourceTree = "<group>"; };
+		5FD9047F1AD0891B000D7B94 /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Source; sourceTree = "<group>"; };
+		5FD904841AD089C0000D7B94 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = Includes/Vector3.h; sourceTree = "<group>"; };
+		5FD904851AD089C0000D7B94 /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Source; sourceTree = "<group>"; };
+		5FD904861AD089C0000D7B94 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3.cpp; path = Source/Vector3.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FD904111AD07AE0000D7B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FD9040B1AD07AE0000D7B94 = {
+			isa = PBXGroup;
+			children = (
+				5FD904841AD089C0000D7B94 /* Vector3.h */,
+				5FD904851AD089C0000D7B94 /* Source */,
+				5FD904861AD089C0000D7B94 /* Vector3.cpp */,
+				5FD9047F1AD0891B000D7B94 /* Source */,
+				5FD904231AD07C50000D7B94 /* Bitmap.h */,
+				5FD904261AD07C50000D7B94 /* Camera.h */,
+				5FD904271AD07C50000D7B94 /* CellTexture.h */,
+				5FD904281AD07C50000D7B94 /* CloudTexture.h */,
+				5FD904291AD07C50000D7B94 /* Color.h */,
+				5FD9042B1AD07C50000D7B94 /* Core.h */,
+				5FD904321AD07C50000D7B94 /* MarbleTexture.h */,
+				5FD904381AD07C50000D7B94 /* PerlinNoise.h */,
+				5FD9043E1AD07C50000D7B94 /* Scene.h */,
+				5FD904401AD07C50000D7B94 /* Texture.h */,
+				5FD904451AD07C50000D7B94 /* WoodTexture.h */,
+				5FD904461AD07C50000D7B94 /* WorleyNoise.h */,
+				5FD904481AD07C50000D7B94 /* Bitmap.cpp */,
+				5FD9044B1AD07C50000D7B94 /* Camera.cpp */,
+				5FD9044C1AD07C50000D7B94 /* CellTexture.cpp */,
+				5FD9044D1AD07C50000D7B94 /* CloudTexture.cpp */,
+				5FD9044E1AD07C50000D7B94 /* Color.cpp */,
+				5FD904541AD07C50000D7B94 /* main.cpp */,
+				5FD904551AD07C50000D7B94 /* MarbleTexture.cpp */,
+				5FD904591AD07C50000D7B94 /* PerlinNoise.cpp */,
+				5FD904601AD07C50000D7B94 /* WoodTexture.cpp */,
+				5FD904611AD07C50000D7B94 /* WorleyNoise.cpp */,
+				5FD904151AD07AE0000D7B94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FD904151AD07AE0000D7B94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FD904141AD07AE0000D7B94 /* textureGenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FD904131AD07AE0000D7B94 /* textureGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FD9041B1AD07AE0000D7B94 /* Build configuration list for PBXNativeTarget "textureGenerator" */;
+			buildPhases = (
+				5FD904101AD07AE0000D7B94 /* Sources */,
+				5FD904111AD07AE0000D7B94 /* Frameworks */,
+				5FD904121AD07AE0000D7B94 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = textureGenerator;
+			productName = textureGenerator;
+			productReference = 5FD904141AD07AE0000D7B94 /* textureGenerator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FD9040C1AD07AE0000D7B94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = MonaLiu;
+				TargetAttributes = {
+					5FD904131AD07AE0000D7B94 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 5FD9040F1AD07AE0000D7B94 /* Build configuration list for PBXProject "textureGenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5FD9040B1AD07AE0000D7B94;
+			productRefGroup = 5FD904151AD07AE0000D7B94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FD904131AD07AE0000D7B94 /* textureGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FD904101AD07AE0000D7B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FD904871AD089C0000D7B94 /* Vector3.cpp in Sources */,
+				5FD904681AD07C50000D7B94 /* Color.cpp in Sources */,
+				5FD904651AD07C50000D7B94 /* Camera.cpp in Sources */,
+				5FD904731AD07C50000D7B94 /* PerlinNoise.cpp in Sources */,
+				5FD9046F1AD07C50000D7B94 /* MarbleTexture.cpp in Sources */,
+				5FD9047A1AD07C50000D7B94 /* WoodTexture.cpp in Sources */,
+				5FD904621AD07C50000D7B94 /* Bitmap.cpp in Sources */,
+				5FD904661AD07C50000D7B94 /* CellTexture.cpp in Sources */,
+				5FD9047B1AD07C50000D7B94 /* WorleyNoise.cpp in Sources */,
+				5FD9046E1AD07C50000D7B94 /* main.cpp in Sources */,
+				5FD904671AD07C50000D7B94 /* CloudTexture.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5FD904191AD07AE0000D7B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5FD9041A1AD07AE0000D7B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5FD9041C1AD07AE0000D7B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FD9041D1AD07AE0000D7B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FD9040F1AD07AE0000D7B94 /* Build configuration list for PBXProject "textureGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD904191AD07AE0000D7B94 /* Debug */,
+				5FD9041A1AD07AE0000D7B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FD9041B1AD07AE0000D7B94 /* Build configuration list for PBXNativeTarget "textureGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD9041C1AD07AE0000D7B94 /* Debug */,
+				5FD9041D1AD07AE0000D7B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FD9040C1AD07AE0000D7B94 /* Project object */;
+}

@@ -86,22 +86,17 @@ window::window(QWidget *parent) :
     QGridLayout *mainLayout = new QGridLayout;
     mainLayout->addWidget(TextureLabel, 0, 0, Qt::AlignRight);
     mainLayout->addWidget(TextureBox, 0, 1, Qt::AlignLeft);
-
     mainLayout->addWidget(sizeXLabel, 0, 2, Qt::AlignRight);
     mainLayout->addWidget(sizeX, 0, 3, Qt::AlignLeft);
-
     mainLayout->addWidget(sizeYLabel, 0, 4, Qt::AlignRight);
     mainLayout->addWidget(sizeY, 0, 5, Qt::AlignLeft);
-
     mainLayout->addWidget(scaleLabel, 0, 6, Qt::AlignRight);
     mainLayout->addWidget(scale, 0, 7, Qt::AlignLeft);
 
     mainLayout->addWidget(DistanceLabel, 1, 3, Qt::AlignRight);
     mainLayout->addWidget(DistanceBox, 1, 4, Qt::AlignLeft);
-
     mainLayout->addWidget(CombineLabel, 1, 5, Qt::AlignRight);
     mainLayout->addWidget(CombineBox, 1, 6, Qt::AlignLeft);
-
     mainLayout->addWidget(seedLabel, 1, 7, Qt::AlignRight);
     mainLayout->addWidget(seed, 1, 8, Qt::AlignLeft);
 
@@ -153,7 +148,6 @@ void window::combChanged() {
         myComb = WorleyNoise::D1;
     } else if (idx == 1) {
         myComb = WorleyNoise::D2;
-
     } else if (idx == 2) {
         myComb = WorleyNoise::D3;
     }
@@ -188,13 +182,16 @@ void window::resetPressed() {
         baseColor.FromInt(0x7906131);
     }
 
-    colorSelector->setCurrentColor(QColor(baseColor.getRed(), baseColor.getGreen(), baseColor.getBlue()));
+    colorSelector->setCurrentColor(QColor(baseColor.getRed(),
+                                          baseColor.getGreen(),
+                                          baseColor.getBlue()));
     textureChanged();
 }
 
 void window::savePressed() {
-    QString imagePath = QFileDialog::getSaveFileName(this, tr("Save File"), "",
-                                                     tr("JPEG (*.jpg *.jpeg);;PNG (*.png)"));
+    QString imagePath = QFileDialog::getSaveFileName(
+                this, tr("Save File"), "",
+                tr("JPEG (*.jpg *.jpeg);;PNG (*.png)"));
     render->save(imagePath);
 }
 

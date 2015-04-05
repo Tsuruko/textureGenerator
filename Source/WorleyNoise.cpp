@@ -102,7 +102,7 @@ float WorleyNoise::Noise(Vector3 pos, int seed, int distanceFunc,std::vector<flo
                     if (distanceFunc == EUCLIDIAN) dist = EuclidianDist(pos, featPt);
                     if (distanceFunc == MANHATTAN) dist = ManhattanDist(pos, featPt);
                     if (distanceFunc == CHEBYSHEV) dist = ChebyshevDist(pos, featPt);
-//
+
                     float temp;
                     //sorted insertion
                     for (int i = (int)distances.size()-1; i >= 0; i--) {

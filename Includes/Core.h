@@ -8,17 +8,18 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <math.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include <time.h>
 #include <string.h>
-#include <ctype.h>
 #include <algorithm>
+#include <iostream>
 #ifdef _WIN32
 #include <windows.h>
+#define M_PI	3.14159265f
 #endif
 
-#define PI	3.14159265f
 #define TEXTOFF 100.0f
+
+using namespace std;
 
 inline int Min2(int a,int b)					{return a<b ? a : b;}
 inline float Min2(float a,float b)			{return a<b ? a : b;}

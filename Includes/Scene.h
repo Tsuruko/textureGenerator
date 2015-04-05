@@ -1,37 +1,38 @@
-////////////////////////////////////////
-// Scene.h
-////////////////////////////////////////
+//
+//  Scene.h
+//  CSE168Project1
+//
+//  Created by Mona Liu on 4/4/14.
+//
+//
 
-#ifndef CSE168_SCENE_H
-#define CSE168_SCENE_H
+#ifndef __CSE168Project1__Scene__
+#define __CSE168Project1__Scene__
 
+#include "Bitmap.h"
 #include "Color.h"
-#include <vector>
 #include "Texture.h"
 
-////////////////////////////////////////////////////////////////////////////////
-
 class Scene {
+    
 public:
-	Scene()										{SkyColor.Set(0.2f,0.2f,0.5f);
-                                                skyText = nullptr;}
-
-	void SetSkyColor(const Color sky)			{SkyColor = sky;}
-    void SetSkyTexture(Texture *t)               {skyText = t;}
+    Scene();
+    void SetResolution(int,int);
     
-	Color GetSkyColor()							{return SkyColor;}
+    void Render();
+    void SaveBitmap(const char*);
     
-    float getTexture(Vector3 pos) {
-        if (skyText != nullptr)
-            return skyText->getTexture(pos);
-        return 1.0f;
-    }
-
+    void setColor(const Color c);
+    void setTexture(Texture *t);
+    
 private:
-	Color SkyColor;
-    Texture *skyText;
+    int XRes,YRes;
+    
+    Color baseColor;
+    Texture *myTexture;
+    
+    Bitmap BMP;
 };
 
-////////////////////////////////////////////////////////////////////////////////
 
-#endif
+#endif /* defined(__CSE168Project1__Scene__) */

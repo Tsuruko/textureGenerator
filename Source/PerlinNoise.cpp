@@ -33,11 +33,11 @@ PerlinNoise::PerlinNoise() {
 void PerlinNoise::Seed(unsigned int seed) {
     //initialize vector and fill
     p.resize(256);
-    std::iota(p.begin(), p.end(), 0);
+    iota(p.begin(), p.end(), 0);
     
     //randomize
-    std::default_random_engine eng(seed);
-    std::shuffle(p.begin(), p.end(), eng);
+    default_random_engine eng(seed);
+    shuffle(p.begin(), p.end(), eng);
     
     //duplicate
     p.insert(p.end(), p.begin(), p.end());
@@ -121,7 +121,7 @@ float PerlinNoise::getNoise(Vector3 pos) {
 
 float PerlinNoise::CosineInterpolate(float a, float b, float x) {
     //cosine interpolation
-    float r = x * PI;
+    float r = x * M_PI;
     float f = (1.0f - cosf(r)) * 0.5f;
     return (a*(1.0f-f)) + (b*f);
 }

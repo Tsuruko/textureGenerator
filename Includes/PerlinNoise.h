@@ -32,7 +32,7 @@ public:
     float octaves;
     
 private:
-    std::vector<int> p;
+    vector<int> p;
     float ImprovedNoise(float x, float y, float z);
 
     //helper functions

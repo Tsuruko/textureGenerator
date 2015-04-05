@@ -17,7 +17,7 @@ class WorleyNoise {
 public:
     WorleyNoise();
     
-    float Noise(Vector3, int, int, std::vector<float>, int);
+    float Noise(Vector3, int, int, vector<float>, int);
     
     static float EuclidianDist(Vector3 p1, Vector3 p2);
     static float ManhattanDist(Vector3 p1, Vector3 p2);

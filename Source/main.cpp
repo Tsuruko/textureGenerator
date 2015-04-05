@@ -97,7 +97,7 @@ int main(int argc,char **argv) {
     int color;
     int xSize = 80;
     int ySize = 60;
-    Scene cam;
+    Scene scn;
     
     // used photoshop color spectrum to select colors
     Color c = Color::BLACK;
@@ -105,28 +105,26 @@ int main(int argc,char **argv) {
     if (strcmp(argv[1], "cloud") == 0) {
         CloudTexture cloud = CloudTexture();
         c.FromInt(0xCCE5FF);
-        cam.setTexture(&cloud);
+        scn.setTexture(&cloud);
     } else if (strcmp(argv[1], "wood") == 0) {
         c.FromInt(0x7906131);
         WoodTexture wood = WoodTexture();
-        cam.setTexture(&wood);
+        scn.setTexture(&wood);
     } else if (strcmp(argv[1], "marble") == 0) {
         c.FromInt(0xb2daed);
         MarbleTexture marble = MarbleTexture(40.0f);
-        cam.setTexture(&marble);
+        scn.setTexture(&marble);
     } else if (strcmp(argv[1], "lava") == 0) {
         c.FromInt(0x8e1b1b);
         CellTexture latex = CellTexture(10.0f, 5550, WorleyNoise::MANHATTAN, WorleyNoise::D3);
-        cam.setTexture(&latex);
+        scn.setTexture(&latex);
     } else if (strcmp(argv[1], "cell") == 0) {
         c.FromInt(0xc99968);
         CellTexture gro = CellTexture(1.0f, 1305, WorleyNoise::EUCLIDIAN, WorleyNoise::D1);
-        cam.setTexture(&gro);
+        scn.setTexture(&gro);
     } else {
         usage();
     }
-    
-
     
     if (argc == 3) {
         color = checkColor(argv[2]);
@@ -140,13 +138,13 @@ int main(int argc,char **argv) {
         xSize = checkSize(argv[3]);
         ySize = checkSize(argv[4]);
     }
-    cam.setColor(c);
+    scn.setColor(c);
     
     //Render image
-    cam.SetResolution(xSize,ySize);
-    cam.Render();
+    scn.SetResolution(xSize,ySize);
+    scn.Render();
     concat = APP_PATH + "texture.bmp";
-    cam.SaveBitmap(concat.c_str());
+    scn.SaveBitmap(concat.c_str());
     
 }
 

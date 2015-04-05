@@ -54,7 +54,7 @@ public:
 	const Vector3 &operator/=(const Vector3 &a) {x/=a.x; y/=a.y; z/=a.z; return *this;}
 
 	float &operator[](int i) {return(((float*)this)[i]);}
-	const float operator[](int i) const	;
+    const float operator[](int i) const	;
 
 	// Misc functions
 	void Print(const char *name=0) const;

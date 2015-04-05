@@ -57,7 +57,7 @@ unsigned int WorleyNoise::hash(unsigned int i, unsigned int j, unsigned int k) {
                              (unsigned int)j) * FNV_PRIME) ^ (unsigned int)k) * FNV_PRIME);
 }
 
-float WorleyNoise::Noise(Vector3 pos, int seed, int distanceFunc,std::vector<float> distances, int combine) {
+float WorleyNoise::Noise(Vector3 pos, int seed, int distanceFunc, vector<float> distances, int combine) {
     unsigned int lRand, numberfeatPts;
     Vector3 rDiff, featPt;
     float cubeX, cubeY, cubeZ;

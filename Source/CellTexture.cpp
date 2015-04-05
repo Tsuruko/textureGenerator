@@ -24,7 +24,7 @@ CellTexture::CellTexture(float sca, int s, int d, int c) {
     combineMode = c;
 }
 float CellTexture::getTexture(const Vector3& pos) {
-    std::vector<float> dists = std::vector<float>();
+    vector<float> dists = vector<float>();
     dists.resize(3);
 
     Vector3 temp = Vector3(pos.x+TEXTOFF, pos.y+TEXTOFF, pos.z+TEXTOFF);

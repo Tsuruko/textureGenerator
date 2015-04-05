@@ -39,5 +39,5 @@ float MarbleTexture::getTexture(const Vector3 &pos) {
     float noise = pos.x*xPeriod + pos.y*yPeriod + pos.z*zPeriod +
                     turbPower * pn->turbulence(temp, turbSize);
 
-    return fabsf(sinf(noise * PI));
+    return fabsf(sinf(noise * M_PI));
 }

@@ -27,6 +27,10 @@ public:
 	int ToInt();
 	void FromInt(int c);
 
+    int getRed();
+    int getGreen();
+    int getBlue();
+
 	static Color WHITE,GREY,BLACK;
 	static Color RED,YELLOW,BLUE,GREEN;
 

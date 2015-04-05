@@ -81,3 +81,14 @@ Color Color::Difference(const Color c) {
     return Color(r, g, b);
 }
 
+int Color::getRed() {
+    return 255 * Red;
+}
+
+int Color::getGreen() {
+    return 255 * Green;
+}
+
+int Color::getBlue() {
+    return 255 * Blue;
+}

@@ -11,6 +11,7 @@
 #include <QPushButton>
 #include <QString>
 #include <QFileDialog>
+#include <QDoubleSpinBox>
 
 #include "Core.h"
 #include "Scene.h"
@@ -36,8 +37,13 @@ private slots:
     void sizeChanged();
     void colorChanged();
     void savePressed();
+    void distChanged();
+    void combChanged();
+    void resetPressed();
 
 private:
+    void renderImg();
+
     Ui::window *ui;
 
     QLabel * TextureLabel;
@@ -53,10 +59,24 @@ private:
 
     QColorDialog * colorSelector;
 
+    QLabel * DistanceLabel;
+    QComboBox * DistanceBox;
+    QLabel * CombineLabel;
+    QComboBox * CombineBox;
+
+    QDoubleSpinBox * scale;
+    QLabel * scaleLabel;
+
+    QLabel * seedLabel;
+    QSpinBox * seed;
+
     QPushButton * saveButton;
+    QPushButton * resetButton;
 
     Texture * myTexture;
     Color baseColor;
+    int myDist;
+    int myComb;
 };
 
 #endif // WINDOW_H

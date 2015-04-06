@@ -23,13 +23,13 @@ window::window(QWidget *parent) :
     sizeY->setMinimum(0);
     sizeX->setMaximum(10000);
     sizeY->setMaximum(10000);
-    sizeX->setValue(500);
-    sizeY->setValue(500);
+    sizeX->setValue(1000);
+    sizeY->setValue(1000);
     sizeXLabel = new QLabel(tr("X size:"));
     sizeYLabel = new QLabel(tr("Y size:"));
 
     //render image
-    render = new QImage(500, 500, QImage::Format_RGB32);
+    render = new QImage(sizeX->value(), sizeY->value(), QImage::Format_RGB32);
     renderLabel = new QLabel();
     renderLabel->setPixmap(QPixmap::fromImage(*render));
     QScrollArea *renderScrollArea = new QScrollArea;
